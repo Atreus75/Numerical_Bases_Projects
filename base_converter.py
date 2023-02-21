@@ -1,4 +1,4 @@
-# This is not the fastter and better way to convert numerical bases in python. 
+# This is not the faster and better way to convert numerical bases in python. 
 # This code is just a way to perform the manual calculations required for the conversion. Use as an educational example.
 bases = {'binary':2, 'octal':8, 'decimal':10, 'hexadecimal':16}
 
