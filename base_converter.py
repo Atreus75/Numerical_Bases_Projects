@@ -65,7 +65,7 @@ def convert_hexadecimal_values( number='', mode=1):
     if mode == 1:
         for value in values:
             number = number.replace(str(value[1]), value[0]) if str(value[1]) in number else number
-    # Mode 2 corresponds to: convert alphabetic characters to numeric
+    # Mode 2 corresponds to: convert alphabetic characters to numeric (For presentation)
     elif mode == 2:
         for value in values:
             number = number.replace(value[0], str(value[1])) if value[0] in number.upper() else number
