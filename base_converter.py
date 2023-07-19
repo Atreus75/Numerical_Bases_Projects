@@ -1,5 +1,3 @@
-# This is not the faster and better way to convert numerical bases in python. 
-# This code is just a way to perform the manual calculations required for the conversion. Use as an educational example.
 bases = {'binary':2, 'octal':8, 'decimal':10, 'hexadecimal':16}
 
 # That function checks if the number is in the selected base
@@ -65,10 +63,9 @@ def convert_hexadecimal_values( number='', mode=1):
     if mode == 1:
         for value in values:
             number = number.replace(str(value[1]), value[0]) if str(value[1]) in number else number
-    # Mode 2 corresponds to: convert alphabetic characters to numeric (For presentation)
+    # Mode 2 corresponds to: convert alphabetic characters to numeric
     elif mode == 2:
         for value in values:
             number = number.replace(value[0], str(value[1])) if value[0] in number.upper() else number
     return number
-
 
